@@ -1,0 +1,25 @@
+index-version-ejemplo.html
+
+# Node modules (no subir dependencias)
+node_modules/
+
+# Archivos de construcción / distribución
+dist/
+
+# Archivos de logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / sistema operativo
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno (si usas variables de entorno)
+.env
+
+# Archivos temporales
+*.tmp
+*.temp
