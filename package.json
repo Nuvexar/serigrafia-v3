@@ -1,0 +1,25 @@
+{
+  "name": "serigrafia-v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i .\\src\\css\\input.css -o .\\src\\css\\output.css --watch",
+    "copy:dist": "shx mkdir -p dist && shx cp src/index.html dist/ && shx mkdir -p dist/js && shx cp -r src/js/* dist/js/ && shx mkdir -p dist/css && shx cp src/css/estilos.css dist/css/ && shx cp src/css/output.css dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nuvexar/serigrafia-v3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nuvexar/serigrafia-v3/issues"
+  },
+  "homepage": "https://github.com/Nuvexar/serigrafia-v3#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "shx": "^0.4.0",
+    "tailwindcss": "^4.1.11"
+  }
+}
