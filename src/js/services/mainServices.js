@@ -9,9 +9,8 @@ window.addEventListener("load", () => {
 
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    // Remover clase activa de todos los botones
     filterBtns.forEach((b) => b.classList.remove("active"));
-    // Agregar clase activa al botón clickeado
+    
     btn.classList.add("active");
 
     const filter = btn.getAttribute("data-filter");
@@ -43,6 +42,6 @@ function assignImageClickEvents() {
     });
 }
 
-
+window.addEventListener("resize", resizeAllMasonryItems);
 
 
