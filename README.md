@@ -1,4 +1,4 @@
-# Serigrafía - Landing Page
+# Print Web - Landing Page
 
 Este proyecto es una landing page para serigrafía creada con HTML, CSS (Tailwind CSS V4.1) y JavaScript.
 
