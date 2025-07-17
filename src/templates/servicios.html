@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce todos nuestros servicios de serigrafía, sublimación, remeras personalizadas y diseño de páginas web. Personaliza tus productos y mejora tu presencia en línea con nosotros.">
+    <meta name="keywords" content="serigrafía, sublimación, remeras personalizadas, diseño de páginas web, servicios de personalización, serigrafía en camisetas">
+    <meta name="author" content="Kevin Acarapi">
+    <meta name="copyright" content="Tu Empresa - Todos los derechos reservados">
+    <title>Galería de Trabajos | PrintWeb Studio</title>
+    <link rel="stylesheet" href="../css/output.css"> 
+    <link rel="stylesheet" href="../css/estilos.css"> 
+    <link rel="stylesheet" href="../css/servicios/servicios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="text-light">
+    <!-- Navegación -->
+    <nav class="fixed w-full bg-dark/90 backdrop-blur-md z-50 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">
+                <span class="gradient-text">Print</span>Web
+            </a>
+
+            <!-- Navegación Desktop -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#trabajos" class="nav-link">Trabajos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+
+            <!-- Botón de menú móvil -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full bg-neutral z-50 p-6">
+            <div class="flex justify-between items-center pb-8 bg-neutral h-full w-full">
+                <span class="text-2xl font-bold">
+                    <span class="gradient-text">Print</span>Web
+                </span>
+                <button id="close-menu" class="text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-6 bg-neutral">
+                <a href="#inicio" class="text-xl">Inicio</a>
+                <a href="#servicios" class="text-xl">Servicios</a>
+                <a href="#trabajos" class="text-xl">Trabajos</a>
+                <a href="#contacto" class="text-xl">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-white">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Nuestros Trabajos</h1>
+                <p class="text-xl text-gray-100 max-w-3xl mx-auto">
+                    Explora nuestra colección de proyectos realizados para clientes satisfechos
+                </p>
+            </div>
+        </div>
+        
+        <!-- Onda decorativa inferior -->
+        <div class="relative h-16 mt-16 overflow-hidden">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,140.83,94.17,208.18,80.28,289.4,65.17,283.09,63.45,321.39,56.44Z" fill="#F8F9FA"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <button class="filter-btn active px-6 py-2 rounded-full border cursor-pointer" data-filter="all">
+                    Todos
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-full border cursor-pointer" data-filter="sublimacion">
+                    Sublimación
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-full border cursor-pointer" data-filter="serigrafia">
+                    Serigrafía
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-full border cursor-pointer" data-filter="remeras">
+                    Remeras
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-full border cursor-pointer" data-filter="web">
+                    Diseño Web
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Imágenes -->
+    <section class="py-8 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="masonry-grid" id="gallery-container">
+                <!-- Imagen 1 - Remeras -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="remeras sublimacion" data-span="30" >
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Remera Tech Startup" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 2 - Remeras -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="remeras sublimacion" data-span="35">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Remera Dev Team" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 3 - Serigrafía -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="serigrafia remeras" data-span="40">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Uniforme Eagles" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 4 - Sublimación -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="sublimacion" data-span="25">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Taza Corporativa" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 5 - Serigrafía -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="serigrafia remeras" data-span="32">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Remera Festival" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 6 - Web -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="web" data-span="38" >
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Landing Page" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 7 - Web -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="web" data-span="28" >
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Tienda Online" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 8 - Remeras -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="remeras sublimacion" data-span="34">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Remera Custom" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 9 - Sublimación -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="sublimacion" data-span="42" >
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Termo Personalizado" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 10 - Serigrafía -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="serigrafia" data-span="26">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Gorra Personalizada" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 11 - Web -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="web" data-span="36" >
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Sitio Responsivo" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 12 - Sublimación -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="sublimacion" data-span="24" >
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Mouse Pad" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 13 - Remeras -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="remeras serigrafia" data-span="32" >
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1622445275463-afa2ab738c34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Remera Wave" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 14 - Sublimación -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="sublimacion" data-span="28" >
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Agenda Personalizada" class="gallery-img">
+                    </div>
+                </div>
+                
+                <!-- Imagen 15 - Web -->
+                <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" data-category="web" data-span="38" >
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Dashboard Web" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 gradient-bg mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">¿Te gustaría un proyecto personalizado?</h2>
+            <p class="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
+                Contáctanos hoy mismo y convierte tus ideas en diseños únicos que destaquen tu marca.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/5491100000000" target="_blank" class="bg-[#25D366] hover:bg-[#25D366]/90 px-8 py-3 rounded-full font-medium text-white transition-colors flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Contactar por WhatsApp
+                </a>
+            </div>
+        </div>
+        
+        <!-- Onda decorativa inferior -->
+        <div class="relative h-16 mt-16 overflow-hidden">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,140.83,94.17,208.18,80.28,289.4,65.17,283.09,63.45,321.39,56.44Z" fill="#F8F9FA"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <a href="#" class="text-2xl font-bold mb-4 inline-block">
+                        <span class="gradient-text">Print</span>Web
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Soluciones creativas para emprendedores e instituciones. Diseños que marcan la diferencia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-neutral rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-neutral rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-neutral rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-accent transition-colors">Inicio</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-accent transition-colors">Servicios</a>
+                        </li>
+                        <li><a href="#trabajos" class="text-gray-400 hover:text-accent transition-colors">Trabajos</a>
+                        </li>
+                        <li><a href="#contacto" class="text-gray-400 hover:text-accent transition-colors">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#servicios"
+                                class="text-gray-400 hover:text-accent transition-colors">Sublimación</a></li>
+                        <li><a href="#servicios"
+                                class="text-gray-400 hover:text-accent transition-colors">Serigrafía</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-accent transition-colors">Remeras
+                                personalizadas</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-accent transition-colors">Diseño
+                                web</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-500">
+                    © 2023 PrintWeb Studio. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <span class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/servicios/lightbox.js"></script>
+    <script src="../js/servicios/masonryLayout.js"></script>
+    <script src="../js/servicios/mainServices.js"></script>
+</body>

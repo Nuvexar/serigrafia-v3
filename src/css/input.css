@@ -1,2 +1,10 @@
 @import "tailwindcss";
-@config "../../tailwind.config.js"
+@config "../../tailwind.config.js";
+
+@theme {
+    --color-primary-subli: '#4361EE';
+    --color-secondary-subli: '#3A0CA3';
+    --color-accent-subli: '#F72585';
+    --color-light-subli: '#F8F9FA';
+    --color-dark-subli: '#212529';
+}
