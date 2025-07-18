@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:css": "npx tailwindcss -i .\\src\\css\\input.css -o .\\src\\css\\output.css --watch",
-    "copy:dist": "shx cp -r src/* dist/ && shx rm dist/css/input.css"
+    "copy:dist": "shx mkdir -p dist && shx cp -r src/* dist/ && shx rm dist/css/input.css"
   },
   "repository": {
     "type": "git",
