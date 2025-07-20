@@ -8,386 +8,399 @@
     <meta name="keywords" content="serigrafía, sublimación, remeras personalizadas, diseño de páginas web, landing page, serigrafía en camisetas, personalización de ropa">
     <meta name="author" content="Kevin Acarapi">
     <meta name="copyright" content="Tu Empresa - Todos los derechos reservados">
+    <title>Print Web</title>
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Print Web</title>
 </head>
 <body class="text-light">
-    <!-- Navegación -->
-    <nav class="fixed w-full bg-dark/90 backdrop-blur-md z-50 py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold">
-                <span class="gradient-text">Print</span>Web
-            </a>
-
-            <!-- Navegación Desktop -->
-            <div class="hidden md:flex space-x-8">
-                <a href="#inicio" class="nav-link">Inicio</a>
-                <a href="#servicios" class="nav-link">Servicios</a>
-                <a href="#trabajos" class="nav-link">Trabajos</a>
-                <a href="#contacto" class="nav-link">Contacto</a>
-            </div>
-
-            <!-- Botón de menú móvil -->
-            <button id="menu-btn" class="md:hidden text-2xl">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-
-        <!-- Menú móvil -->
-        <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full bg-neutral z-50 p-6">
-            <div class="flex justify-between items-center pb-8 bg-neutral h-full w-full">
-                <span class="text-2xl font-bold">
+    <header id="header">
+        <!-- Navegación -->
+        <nav class="fixed w-full bg-dark/90 backdrop-blur-md z-50 py-4">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">
                     <span class="gradient-text">Print</span>Web
-                </span>
-                <button id="close-menu" class="text-2xl">
-                    <i class="fas fa-times"></i>
+                </a>
+
+                <!-- Navegación Desktop -->
+                    <ul class="hidden md:flex space-x-8">
+                        <li>
+                            <a href="#inicio" class="nav-link">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#servicios" class="nav-link">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#trabajos" class="nav-link">Trabajos</a>
+                        </li>
+                        <li>
+                            <a href="#contacto" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+
+                <!-- Botón de menú móvil -->
+                <button id="menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
-            <div class="flex flex-col space-y-6 bg-neutral">
-                <a href="#inicio" class="text-xl">Inicio</a>
-                <a href="#servicios" class="text-xl">Servicios</a>
-                <a href="#trabajos" class="text-xl">Trabajos</a>
-                <a href="#contacto" class="text-xl">Contacto</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                <defs>
-                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#333333" stroke-width="0.5" />
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
-        </div>
-
-        <div class="container mx-auto px-4 z-10">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="animate-fadeIn">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                        Diseños que <span class="gradient-text">impactan</span>, ideas que <span
-                            class="gradient-text">transforman</span>
-                    </h1>
-                    <p class="text-gray-300 text-lg mb-8">
-                        Somos expertos en sublimación, serigrafía, remeras personalizadas y diseño web. Convertimos tus
-                        ideas en realidad con un estilo único y profesional.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#contacto" class="btn-primary px-8 py-3 rounded-full font-medium">
-                            ¡Cotiza tu proyecto!
-                        </a>
-                        <a href="#servicios" class="btn-outline px-8 py-3 rounded-full font-medium">
-                            Conoce nuestros servicios
-                        </a>
-                    </div>
+            <!-- Menú móvil -->
+            <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full bg-neutral z-50 p-6">
+                <div class="flex justify-between items-center pb-8 bg-neutral h-full w-full">
+                    <span class="text-2xl font-bold">
+                        <span class="gradient-text">Print</span>Web
+                    </span>
+                    <button id="close-menu" class="text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
                 </div>
-
-                <div class="animate-fadeIn delay-200">
-                    <div class="relative">
-                        <!-- SVG ilustración de diseño y sublimación -->
-                        <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
-                            <!-- Fondo abstracto -->
-                            <path d="M50,200 Q150,50 250,200 T450,200" fill="none" stroke="#FF4081" stroke-width="2" />
-                            <path d="M50,220 Q150,70 250,220 T450,220" fill="none" stroke="#3D5AFE" stroke-width="2" />
-
-                            <!-- Camiseta -->
-                            <path d="M250,100 L200,130 L200,300 L300,300 L300,130 L250,100" fill="#2A2A2A" stroke="#444"
-                                stroke-width="2" />
-                            <path d="M200,130 L170,110 L170,150 L200,170 Z" fill="#222" stroke="#444"
-                                stroke-width="2" />
-                            <path d="M300,130 L330,110 L330,150 L300,170 Z" fill="#222" stroke="#444"
-                                stroke-width="2" />
-
-                            <!-- Diseño en la camiseta -->
-                            <circle cx="250" cy="200" r="30" fill="#FF4081" opacity="0.8" />
-                            <rect x="235" y="185" width="30" height="30" fill="#3D5AFE" opacity="0.8" />
-
-                            <!-- Laptop/Diseño web -->
-                            <rect x="150" y="320" width="200" height="10" rx="2" fill="#333" />
-                            <path d="M160,320 L340,320 L330,250 L170,250 Z" fill="#222" stroke="#444"
-                                stroke-width="1" />
-                            <rect x="180" y="260" width="140" height="50" fill="#121212" />
-                            <path d="M190,270 L220,270 L220,280 L190,280 Z" fill="#FF4081" opacity="0.8" />
-                            <path d="M190,290 L310,290 L310,295 L190,295 Z" fill="#666" />
-                            <path d="M190,300 L280,300 L280,305 L190,305 Z" fill="#666" />
-
-                            <!-- Elementos de diseño -->
-                            <circle cx="350" cy="150" r="15" fill="#FF4081" opacity="0.6" />
-                            <circle cx="380" cy="180" r="10" fill="#3D5AFE" opacity="0.6" />
-                            <circle cx="150" cy="200" r="20" fill="#FF4081" opacity="0.4" />
-                            <circle cx="120" cy="230" r="12" fill="#3D5AFE" opacity="0.4" />
-                        </svg>
-                    </div>
+                <div class="flex flex-col space-y-6 bg-neutral">
+                    <a href="#inicio" class="text-xl">Inicio</a>
+                    <a href="#servicios" class="text-xl">Servicios</a>
+                    <a href="#trabajos" class="text-xl">Trabajos</a>
+                    <a href="#contacto" class="text-xl">Contacto</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- Servicios -->
-    <section id="servicios" class="py-20 bg-neutral">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 animate-fadeIn">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios</h2>
-                <p class="text-gray-300 max-w-2xl mx-auto">
-                    Ofrecemos soluciones creativas para emprendedores, instituciones y empresas de todos los tamaños.
-                </p>
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="inicio" class="min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                    <defs>
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#333333" stroke-width="0.5" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Servicio 1 -->
-                <div class="service-card bg-dark rounded-xl p-6 transition-all duration-300 animate-fadeIn delay-100">
-                    <div
-                        class="bg-gradient-to-br from-accent to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-tshirt text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Sublimación</h3>
-                    <p class="text-gray-400 mb-4">
-                        Impresiones de alta calidad y durabilidad en diversos materiales y superficies.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Remeras y buzos
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Tazas y termos
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Artículos promocionales
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 2 -->
-                <div class="service-card bg-dark rounded-xl p-6 transition-all duration-300 animate-fadeIn delay-200">
-                    <div
-                        class="bg-gradient-to-br from-accent to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-paint-brush text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Serigrafía</h3>
-                    <p class="text-gray-400 mb-4">
-                        Estampados duraderos y de alta calidad para producciones a gran escala.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Indumentaria deportiva
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Uniformes escolares
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Merchandising corporativo
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 3 -->
-                <div class="service-card bg-dark rounded-xl p-6 transition-all duration-300 animate-fadeIn delay-300">
-                    <div
-                        class="bg-gradient-to-br from-accent to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-store text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Remeras Personalizadas</h3>
-                    <p class="text-gray-400 mb-4">
-                        Diseños exclusivos para individuos, grupos y eventos especiales.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Diseños originales
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Remeras para eventos
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Regalos personalizados
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 4 -->
-                <div class="service-card bg-dark rounded-xl p-6 transition-all duration-300 animate-fadeIn delay-400">
-                    <div
-                        class="bg-gradient-to-br from-accent to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-laptop-code text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Diseño Web</h3>
-                    <p class="text-gray-400 mb-4">
-                        Sitios web modernos y responsivos para potenciar tu presencia digital.
-                    </p>
-                    <ul class="text-gray-400 space-y-2 mb-6">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Landing pages
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Tiendas online
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-accent mr-2"></i>
-                            Sitios corporativos
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Galería de Trabajos -->
-    <section id="trabajos" class="py-20 bg-dark">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 animate-fadeIn">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Trabajos</h2>
-                <p class="text-gray-300 max-w-2xl mx-auto">
-                    Explora algunos de nuestros proyectos más destacados para clientes de diversos sectores.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Trabajo 1 -->
-                <a href="./templates/services.html" class="gallery-item rounded-xl animate-fadeIn delay-100">
-                    <div class="bg-neutral aspect-square flex items-center justify-center relative">
-                        <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Remera con diseño -->
-                                <rect x="75" y="50" width="150" height="200" rx="10" fill="#333" />
-                                <path d="M75,100 Q150,130 225,100" fill="none" stroke="#444" stroke-width="2" />
-                                <circle cx="150" cy="150" r="40" fill="#FF4081" opacity="0.8" />
-                                <rect x="130" y="130" width="40" height="40" fill="#3D5AFE" opacity="0.6" />
-                                <text x="150" y="155" text-anchor="middle" fill="white" font-size="12">CUSTOM</text>
-                        </svg>
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <div>
-                                <h3 class="text-xl font-semibold">Remeras para StartUp</h3>
-                                <p class="text-gray-300">Sublimación para equipo de tecnología</p>
-                            </div>
+            <div class="container mx-auto px-4 z-10">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="animate-fadeIn">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                            Diseños que <span class="gradient-text">impactan</span>, ideas que <span
+                                class="gradient-text">transforman</span>
+                        </h1>
+                        <p class="text-gray-300 text-lg mb-8">
+                            Somos expertos en sublimación, serigrafía, remeras personalizadas y diseño web. Convertimos
+                            tus
+                            ideas en realidad con un estilo único y profesional.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#contacto" class="btn-primary px-8 py-3 rounded-full font-medium">
+                                ¡Cotiza tu proyecto!
+                            </a>
+                            <a href="#servicios" class="btn-outline px-8 py-3 rounded-full font-medium">
+                                Conoce nuestros servicios
+                            </a>
                         </div>
                     </div>
-                </a>
 
-                <!-- Trabajo 2 -->
-                <a href="./templates/services.html">
-                    <div class="gallery-item rounded-xl animate-fadeIn delay-200">
-                        <div class="bg-neutral aspect-square flex items-center justify-center relative">
-                            <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Uniforme deportivo -->
-                                <rect x="100" y="50" width="100" height="200" rx="5" fill="#222" />
-                                <rect x="100" y="50" width="100" height="80" rx="5" fill="#3D5AFE" opacity="0.8" />
-                                <rect x="100" y="130" width="100" height="120" rx="0" fill="#222" />
-                                <text x="150" y="100" text-anchor="middle" fill="white" font-size="24"
-                                    font-weight="bold">23</text>
-                                <text x="150" y="180" text-anchor="middle" fill="white" font-size="14">EAGLES</text>
+                    <div class="animate-fadeIn delay-200">
+                        <div class="relative">
+                            <!-- SVG ilustración de diseño y sublimación -->
+                            <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                                <!-- Fondo abstracto -->
+                                <path d="M50,200 Q150,50 250,200 T450,200" fill="none" stroke="#FF4081"
+                                    stroke-width="2" />
+                                <path d="M50,220 Q150,70 250,220 T450,220" fill="none" stroke="#3D5AFE"
+                                    stroke-width="2" />
+
+                                <!-- Camiseta -->
+                                <path d="M250,100 L200,130 L200,300 L300,300 L300,130 L250,100" fill="#2A2A2A"
+                                    stroke="#444" stroke-width="2" />
+                                <path d="M200,130 L170,110 L170,150 L200,170 Z" fill="#222" stroke="#444"
+                                    stroke-width="2" />
+                                <path d="M300,130 L330,110 L330,150 L300,170 Z" fill="#222" stroke="#444"
+                                    stroke-width="2" />
+
+                                <!-- Diseño en la camiseta -->
+                                <circle cx="250" cy="200" r="30" fill="#FF4081" opacity="0.8" />
+                                <rect x="235" y="185" width="30" height="30" fill="#3D5AFE" opacity="0.8" />
+
+                                <!-- Laptop/Diseño web -->
+                                <rect x="150" y="320" width="200" height="10" rx="2" fill="#333" />
+                                <path d="M160,320 L340,320 L330,250 L170,250 Z" fill="#222" stroke="#444"
+                                    stroke-width="1" />
+                                <rect x="180" y="260" width="140" height="50" fill="#121212" />
+                                <path d="M190,270 L220,270 L220,280 L190,280 Z" fill="#FF4081" opacity="0.8" />
+                                <path d="M190,290 L310,290 L310,295 L190,295 Z" fill="#666" />
+                                <path d="M190,300 L280,300 L280,305 L190,305 Z" fill="#666" />
+
+                                <!-- Elementos de diseño -->
+                                <circle cx="350" cy="150" r="15" fill="#FF4081" opacity="0.6" />
+                                <circle cx="380" cy="180" r="10" fill="#3D5AFE" opacity="0.6" />
+                                <circle cx="150" cy="200" r="20" fill="#FF4081" opacity="0.4" />
+                                <circle cx="120" cy="230" r="12" fill="#3D5AFE" opacity="0.4" />
                             </svg>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div>
-                                    <h3 class="text-xl font-semibold">Uniformes Deportivos</h3>
-                                    <p class="text-gray-300">Serigrafía para equipo de básquet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="py-20 bg-neutral">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 animate-fadeIn">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios</h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto">
+                        Ofrecemos soluciones creativas para emprendedores, instituciones y empresas de todos los
+                        tamaños.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Servicio 1 -->
+                    <div class="service-card bg-dark rounded-xl p-6 transition-all duration-300 animate-fadeIn delay-100">
+                        <div class="bg-gradient-to-br from-accent to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-tshirt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Sublimación</h3>
+                        <p class="text-gray-400 mb-4">
+                            Impresiones de alta calidad y durabilidad en diversos materiales y superficies.
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Remeras y buzos
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Tazas y termos
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Artículos promocionales
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="service-card bg-dark rounded-xl p-6 transition-all duration-300 animate-fadeIn delay-200">
+                        <div class="bg-gradient-to-br from-accent to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-paint-brush text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Serigrafía</h3>
+                        <p class="text-gray-400 mb-4">
+                            Estampados duraderos y de alta calidad para producciones a gran escala.
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Indumentaria deportiva
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Uniformes escolares
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Merchandising corporativo
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="service-card bg-dark rounded-xl p-6 transition-all duration-300 animate-fadeIn delay-300">
+                        <div class="bg-gradient-to-br from-accent to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-store text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Remeras Personalizadas</h3>
+                        <p class="text-gray-400 mb-4">
+                            Diseños exclusivos para individuos, grupos y eventos especiales.
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Diseños originales
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Remeras para eventos
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Regalos personalizados
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="service-card bg-dark rounded-xl p-6 transition-all duration-300 animate-fadeIn delay-400">
+                        <div class="bg-gradient-to-br from-accent to-secondary w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-laptop-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Diseño Web</h3>
+                        <p class="text-gray-400 mb-4">
+                            Sitios web modernos y responsivos para potenciar tu presencia digital.
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Landing pages
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Tiendas online
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-accent mr-2"></i>
+                                Sitios corporativos
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Trabajos -->
+        <section id="trabajos" class="py-20 bg-dark">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 animate-fadeIn">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Trabajos</h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto">
+                        Explora algunos de nuestros proyectos más destacados para clientes de diversos sectores.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Trabajo 1 -->
+                    <a href="./templates/services.html">
+                        <div class="gallery-item rounded-xl animate-fadeIn delay-100">
+                            <div class="bg-neutral aspect-square flex items-center justify-center relative">
+                                <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Remera con diseño -->
+                                    <rect x="75" y="50" width="150" height="200" rx="10" fill="#333" />
+                                    <path d="M75,100 Q150,130 225,100" fill="none" stroke="#444" stroke-width="2" />
+                                    <circle cx="150" cy="150" r="40" fill="#FF4081" opacity="0.8" />
+                                    <rect x="130" y="130" width="40" height="40" fill="#3D5AFE" opacity="0.6" />
+                                    <text x="150" y="155" text-anchor="middle" fill="white" font-size="12">CUSTOM</text>
+                                </svg>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                    <div>
+                                        <h3 class="text-xl font-semibold">Remeras para StartUp</h3>
+                                        <p class="text-gray-300">Sublimación para equipo de tecnología</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                        
+                    </a>
 
-                <!-- Trabajo 3 -->
-                <a href="./templates/services.html">
-                    <div class="gallery-item rounded-xl animate-fadeIn delay-300 cursor-pointer">
-                        <div class="bg-neutral aspect-square flex items-center justify-center relative">
-                            <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Tazas personalizadas -->
-                                <path d="M100,100 Q100,180 150,180 Q200,180 200,100" fill="#222" stroke="#444"
-                                    stroke-width="2" />
-                                <path d="M100,100 Q100,80 150,80 Q200,80 200,100" fill="#333" stroke="#444"
-                                    stroke-width="2" />
-                                <path d="M200,120 Q220,130 220,150 Q220,170 200,180" fill="#222" stroke="#444"
-                                    stroke-width="2" />
-                                <circle cx="150" cy="130" r="30" fill="#3D5AFE" opacity="0.7" />
-                                <text x="150" y="135" text-anchor="middle" fill="white" font-size="12">COFFEE</text>
-                            </svg>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div>
-                                    <h3 class="text-xl font-semibold">Tazas Corporativas</h3>
-                                    <p class="text-gray-300">Sublimación para empresa de tecnología</p>
+                    <!-- Trabajo 2 -->
+                    <a href="./templates/services.html">
+                        <div class="gallery-item rounded-xl animate-fadeIn delay-200">
+                            <div class="bg-neutral aspect-square flex items-center justify-center relative">
+                                <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Uniforme deportivo -->
+                                    <rect x="100" y="50" width="100" height="200" rx="5" fill="#222" />
+                                    <rect x="100" y="50" width="100" height="80" rx="5" fill="#3D5AFE" opacity="0.8" />
+                                    <rect x="100" y="130" width="100" height="120" rx="0" fill="#222" />
+                                    <text x="150" y="100" text-anchor="middle" fill="white" font-size="24"
+                                        font-weight="bold">23</text>
+                                    <text x="150" y="180" text-anchor="middle" fill="white" font-size="14">EAGLES</text>
+                                </svg>
+                                <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                    <div>
+                                        <h3 class="text-xl font-semibold">Uniformes Deportivos</h3>
+                                        <p class="text-gray-300">Serigrafía para equipo de básquet</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <!-- Trabajo 4 -->
-                <a href="./templates/services.html">
-                    <div class="gallery-item rounded-xl animate-fadeIn delay-400 cursor-pointer">
-                        <div class="bg-neutral aspect-square flex items-center justify-center relative">
-                            <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Remeras para evento -->
-                                <rect x="75" y="70" width="150" height="160" rx="5" fill="#333" />
-                                <path d="M75,100 Q150,120 225,100" fill="none" stroke="#444" stroke-width="2" />
-                                <rect x="100" y="130" width="100" height="40" rx="20" fill="#FF4081" opacity="0.8" />
-                                <text x="150" y="155" text-anchor="middle" fill="white" font-size="14"
-                                    font-weight="bold">FEST 2023</text>
-                            </svg>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div>
-                                    <h3 class="text-xl font-semibold">Remeras para Festival</h3>
-                                    <p class="text-gray-300">Serigrafía para evento musical</p>
+                    <!-- Trabajo 3 -->
+                    <a href="./templates/services.html">
+                        <div class="gallery-item rounded-xl animate-fadeIn delay-300 cursor-pointer">
+                            <div class="bg-neutral aspect-square flex items-center justify-center relative">
+                                <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Tazas personalizadas -->
+                                    <path d="M100,100 Q100,180 150,180 Q200,180 200,100" fill="#222" stroke="#444"
+                                        stroke-width="2" />
+                                    <path d="M100,100 Q100,80 150,80 Q200,80 200,100" fill="#333" stroke="#444"
+                                        stroke-width="2" />
+                                    <path d="M200,120 Q220,130 220,150 Q220,170 200,180" fill="#222" stroke="#444"
+                                        stroke-width="2" />
+                                    <circle cx="150" cy="130" r="30" fill="#3D5AFE" opacity="0.7" />
+                                    <text x="150" y="135" text-anchor="middle" fill="white" font-size="12">COFFEE</text>
+                                </svg>
+                                <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                    <div>
+                                        <h3 class="text-xl font-semibold">Tazas Corporativas</h3>
+                                        <p class="text-gray-300">Sublimación para empresa de tecnología</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <!-- Trabajo 5 -->
-                <a href="./templates/services.html">
-                    <div class="gallery-item rounded-xl animate-fadeIn delay-500 cursor-pointer">
-                        <div class="bg-neutral aspect-square flex items-center justify-center relative">
-                            <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Landing page -->
-                                <rect x="50" y="50" width="200" height="200" rx="5" fill="#121212" stroke="#444"
-                                    stroke-width="2" />
-                                <rect x="50" y="50" width="200" height="40" rx="5" fill="#222" />
-                                <rect x="70" y="65" width="40" height="10" rx="2" fill="#FF4081" />
-                                <rect x="170" y="65" width="60" height="10" rx="5" fill="#3D5AFE" />
-                                <rect x="70" y="110" width="160" height="20" rx="2" fill="#FF4081" opacity="0.7" />
-                                <rect x="70" y="140" width="120" height="10" rx="2" fill="#666" />
-                                <rect x="70" y="160" width="140" height="10" rx="2" fill="#666" />
-                                <rect x="70" y="190" width="80" height="30" rx="15" fill="#3D5AFE" />
-                                <text x="110" y="210" text-anchor="middle" fill="white" font-size="12">COMPRAR</text>
-                            </svg>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                                <div>
-                                    <h3 class="text-xl font-semibold">Landing Page</h3>
-                                    <p class="text-gray-300">Diseño web para lanzamiento de producto</p>
+                    <!-- Trabajo 4 -->
+                    <a href="./templates/services.html">
+                        <div class="gallery-item rounded-xl animate-fadeIn delay-400 cursor-pointer">
+                            <div class="bg-neutral aspect-square flex items-center justify-center relative">
+                                <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Remeras para evento -->
+                                    <rect x="75" y="70" width="150" height="160" rx="5" fill="#333" />
+                                    <path d="M75,100 Q150,120 225,100" fill="none" stroke="#444" stroke-width="2" />
+                                    <rect x="100" y="130" width="100" height="40" rx="20" fill="#FF4081"
+                                        opacity="0.8" />
+                                    <text x="150" y="155" text-anchor="middle" fill="white" font-size="14"
+                                        font-weight="bold">FEST 2023</text>
+                                </svg>
+                                <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                    <div>
+                                        <h3 class="text-xl font-semibold">Remeras para Festival</h3>
+                                        <p class="text-gray-300">Serigrafía para evento musical</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                
+                    </a>
+
+                    <!-- Trabajo 5 -->
+                    <a href="./templates/services.html">
+                        <div class="gallery-item rounded-xl animate-fadeIn delay-500 cursor-pointer">
+                            <div class="bg-neutral aspect-square flex items-center justify-center relative">
+                                <svg class="w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Landing page -->
+                                    <rect x="50" y="50" width="200" height="200" rx="5" fill="#121212" stroke="#444"
+                                        stroke-width="2" />
+                                    <rect x="50" y="50" width="200" height="40" rx="5" fill="#222" />
+                                    <rect x="70" y="65" width="40" height="10" rx="2" fill="#FF4081" />
+                                    <rect x="170" y="65" width="60" height="10" rx="5" fill="#3D5AFE" />
+                                    <rect x="70" y="110" width="160" height="20" rx="2" fill="#FF4081" opacity="0.7" />
+                                    <rect x="70" y="140" width="120" height="10" rx="2" fill="#666" />
+                                    <rect x="70" y="160" width="140" height="10" rx="2" fill="#666" />
+                                    <rect x="70" y="190" width="80" height="30" rx="15" fill="#3D5AFE" />
+                                    <text x="110" y="210" text-anchor="middle" fill="white"
+                                        font-size="12">COMPRAR</text>
+                                </svg>
+                                <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                    <div>
+                                        <h3 class="text-xl font-semibold">Landing Page</h3>
+                                        <p class="text-gray-300">Diseño web para lanzamiento de producto</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="#contacto" class="btn-primary inline-block px-8 py-3 rounded-full font-medium">
+                        ¡Quiero un proyecto así!
+                    </a>
+                </div>
             </div>
-
-            <div class="text-center mt-12">
-                <a href="#contacto" class="btn-primary inline-block px-8 py-3 rounded-full font-medium">
-                    ¡Quiero un proyecto así!
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Contacto -->
     <section id="contacto" class="py-20 bg-neutral">
@@ -406,16 +419,14 @@
                     <form id="contactForm" class="bg-dark p-8 rounded-xl">
                         <div class="mb-6">
                             <label for="name" class="block text-sm font-medium mb-2">Nombre completo</label>
-                            <input type="text" id="name"
-                                class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent"
-                                placeholder="Tu nombre">
+                            <input type="text" id="name" class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent" placeholder="Tu nombre" autocomplete="name">
                         </div>
-
+            
                         <div class="mb-6">
                             <label for="email" class="block text-sm font-medium mb-2">Email</label>
                             <input type="email" id="email"
                                 class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent"
-                                placeholder="tu@email.com">
+                                placeholder="tu@email.com" autocomplete="email">
                         </div>
 
                         <div class="mb-6">
@@ -433,9 +444,7 @@
 
                         <div class="mb-6">
                             <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
-                            <textarea id="message" rows="4"
-                                class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent"
-                                placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                            <textarea id="message" rows="4" class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent" placeholder="Cuéntanos sobre tu proyecto..." autocomplete="off"></textarea>
                         </div>
 
                         <button type="submit" class="btn-primary w-full py-3 rounded-lg font-medium">
@@ -580,4 +589,5 @@
     <script src="./js/index/form.js"></script>
     <script src="./js/index/scrollAnimate.js"></script>
 </body>
+
 </html>
