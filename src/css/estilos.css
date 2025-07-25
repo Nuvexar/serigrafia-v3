@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+:root {
+  /* TEX - blanco con leve tono grisáceo */
+  --color-tex: #f1f1f1dc;
+
+  /* V - verde brillante */
+  --color-verde-brillante: #00e08c;
+
+  /* E - verde esmeralda */
+  --color-verde-apagado: #2da55f;
+}
+
+/* Logo */
+nav .logo {
+  width: 100px;
+}
+
+/* Estilos para el menú móvil */
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.logo-letra-tex {
+  color: var(--color-tex);
+  font-family: 'Montserrat';
+}
+
+.logo-letra-iniciales {
+  color: var(--color-verde-brillante);
+  font-family: 'Montserrat';
+}
+
+.logo-letra-y {
+  color: var(--color-verde-apagado);
+  font-family: 'Montserrat';
+}
 
 html {
   scroll-behavior: smooth;
@@ -14,6 +52,10 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
 }
 
 .service-card:hover {
@@ -92,12 +134,6 @@ body {
   animation-delay: 0.4s;
 }
 
-/* Estilos para el menú móvil */
-.mobile-menu {
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-}
-
-.mobile-menu.open {
-  transform: translateX(0);
+textarea {
+  resize: none;
 }
