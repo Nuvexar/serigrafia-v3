@@ -1,3 +1,10 @@
 .gradient-bg {
     background: linear-gradient(262deg,rgba(46, 76, 140, 0) 27%, rgba(22, 13, 13, 0.445) 50%);
 } 
+
+/* Masonry layout */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
