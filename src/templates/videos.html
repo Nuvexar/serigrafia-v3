@@ -71,47 +71,77 @@
                 </svg>
             </div>
         </section>
-
-        <!-- <section class="py-8 bg-light">
+        
+        <!-- Galería de Videos -->
+        <section class="py-12 bg-light">
             <div class="container mx-auto px-4">
-                <div class="masonry-grid">
-                    <div class="bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                        <video src="../videos/1.mp4" controls alt="card-image" class="h-100 w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Video 1 - Proceso de Sublimación -->
+                    <div class="gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openVideoModal(0)">
+                        <div class="video-thumbnail">
+                            <img src="../img/prueba-img.png" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="duration-badge">3:45</div>
+                            <div class="category-badge">Procesos</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Proceso de Sublimación</h3>
+                            <p class="text-gray-600">Cómo sublimamos nuestras remeras personalizadas</p>
+                        </div>
                     </div>
-                    <div class="bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                        <video src="../videos/2.mp4" controls alt="card-image" class="h-100 w-full">
+                    
+                    <!-- Video 2 - Tutorial de Diseño -->
+                    <div class="gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openVideoModal(1)">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Tutorial de Diseño">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="duration-badge">5:20</div>
+                            <div class="category-badge">Tutoriales</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Tutorial de Diseño</h3>
+                            <p class="text-gray-600">Cómo crear diseños para remeras en Photoshop</p>
+                        </div>
                     </div>
-                    <div class="bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                        <video src="../videos/3.mp4" controls alt="card-image" class="h-100 w-full">
+                    
+                    <!-- Video 3 - Proyecto Eagles -->
+                    <div class="gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openVideoModal(2)">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Proyecto Eagles">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="duration-badge">2:15</div>
+                            <div class="category-badge">Proyectos</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Proyecto Eagles</h3>
+                            <p class="text-gray-600">Uniformes para el equipo de básquet local</p>
+                        </div>
                     </div>
-                    <div class="bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                        <video src="../videos/4.mp4" controls alt="card-image" class="h-100 w-full">
+                    
+                    <!-- Video 4 - Proceso de Tazas -->
+                    <div class="gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openVideoModal(3)">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Proceso de Tazas">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="duration-badge">4:10</div>
+                            <div class="category-badge">Procesos</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Proceso de Tazas</h3>
+                            <p class="text-gray-600">Cómo sublimamos tazas personalizadas</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- grid md:grid-cols-2 lg:grid-cols-4 gap-8 -->
-         <!-- grid grid-cols-2 md:grid-cols-3 gap-4 -->
-        <section class="py-8 bg-light">
-            <div class="container mx-auto px-4">
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="">
-                        <video src="../videos/1.mp4" controls alt="" class="border bg-transparent  rounded-lg">
-                    </div>
-                    <div class="">
-                        <video src="../videos/2.mp4" controls alt="" class="border bg-transparent  rounded-lg">
-                    </div>
-                    <div class="">
-                        <video src="../videos/3.mp4" controls alt="" class="border bg-transparent  rounded-lg">
-                    </div>
-                    <div class="">
-                        <video src="../videos/4.mp4" controls alt="" class="border bg-transparent  rounded-lg">
-                    </div>
-                    <!-- <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt=""> -->
-                </div>
             </div>
         </section>
+
     </main>
 
     <!-- CTA -->
@@ -218,7 +248,20 @@
         </div>
     </footer>
 
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <span class="modal-close z-50" onclick="closeVideoModal()">&times;</span>
+
+        <div class="video-container">
+            <div class="video-wrapper min-h-[400px]">
+                <video id="video-player" controls class="w-full h-auto rounded-lg" style="background-color: #00000099;" preload="metadata">
+                    <source id="video-source" src="" type="video/mp4">
+                </video>            
+            </div>
+        </div>
+    </div>
+
 
     <!-- Scripts -->
-    <!-- <script src="../js/videos/main.js"></script> -->
+    <script src="../js/videos/main.js"></script>
 </body>
