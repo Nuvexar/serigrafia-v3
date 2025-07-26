@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta datos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conoce todos nuestros servicios de serigrafía, sublimación, remeras personalizadas y diseño de páginas web. Personaliza tus productos y mejora tu presencia en línea con nosotros.">
+    <meta name="keywords"
+        content="serigrafía, sublimación, remeras personalizadas, diseño de páginas web, servicios de personalización, serigrafía en camisetas">
+    <meta name="author" content="Kevin Acarapi">
+    <meta name="copyright" content="TEX VYE - Todos los derechos reservados">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/videos/videos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../img/logo-favicon.png" type="image/x-icon">
+    <!-- Título -->
+    <title>TEX VYE | Videos </title>
+</head>
+
+<body class="text-light">
+    <!-- Navegación -->
+    <header id="header">
+        <nav class="fixed w-full bg-dark/90 backdrop-blur-md z-50 py-4">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <a href="#" class="w-[100px]">
+                    <img src="../img/logo.png" alt="Logo TEX V Y E" class="logo">
+                </a>
+
+                <!-- Botón versión desktop -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html"
+                        class="bg-light hover:bg-light/90 text-dark px-8 py-3 rounded-full font-medium transition-colors flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-left mr-2"></i> Volver a página principal
+                    </a>
+                </div>
+
+                <!-- Botón versión móvil -->
+                <button id="menu-btn" class="md:hidden">
+                    <a href="../index.html"
+                        class="bg-light hover:bg-light/90 text-dark px-8 py-3 rounded-full font-medium transition-colors flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-left mr-2 "></i> Volver
+                    </a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="main">
+        <section class="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg">
+            <div class="container mx-auto px-4">
+                <div class="text-center text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Nuestros Videos</h1>
+                    <p class="text-xl text-gray-100 max-w-3xl mx-auto">
+                        Explora nuestra colección de proyectos realizados para clientes satisfechos
+                    </p>
+                </div>
+            </div>
+
+            <!-- Onda decorativa inferior -->
+            <div class="relative h-16 mt-16 overflow-hidden">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full"
+                    xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,140.83,94.17,208.18,80.28,289.4,65.17,283.09,63.45,321.39,56.44Z"
+                        fill="#F8F9FA"></path>
+                </svg>
+            </div>
+        </section>
+        
+        <!-- Galería de Videos -->
+        <section class="py-12 bg-light">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Video 1 - Proceso de Sublimación -->
+                    <div class="gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openVideoModal(0)">
+                        <div class="video-thumbnail">
+                            <img src="../img/prueba-img.png" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="duration-badge">3:45</div>
+                            <div class="category-badge">Procesos</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Proceso de Sublimación</h3>
+                            <p class="text-gray-600">Cómo sublimamos nuestras remeras personalizadas</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 2 - Tutorial de Diseño -->
+                    <div class="gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openVideoModal(1)">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Tutorial de Diseño">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="duration-badge">5:20</div>
+                            <div class="category-badge">Tutoriales</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Tutorial de Diseño</h3>
+                            <p class="text-gray-600">Cómo crear diseños para remeras en Photoshop</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 3 - Proyecto Eagles -->
+                    <div class="gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openVideoModal(2)">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Proyecto Eagles">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="duration-badge">2:15</div>
+                            <div class="category-badge">Proyectos</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Proyecto Eagles</h3>
+                            <p class="text-gray-600">Uniformes para el equipo de básquet local</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 4 - Proceso de Tazas -->
+                    <div class="gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openVideoModal(3)">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Proceso de Tazas">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="duration-badge">4:10</div>
+                            <div class="category-badge">Procesos</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800">Proceso de Tazas</h3>
+                            <p class="text-gray-600">Cómo sublimamos tazas personalizadas</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CTA -->
+    <section class="py-16 gradient-bg mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">¿Te gustaría un proyecto personalizado?</h2>
+            <p class="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
+                Contáctanos hoy mismo y convierte tus ideas en diseños únicos que destaquen tu marca.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/5491100000000" target="_blank"
+                    class="bg-[#25D366] hover:bg-[#25D366]/90 px-8 py-3 rounded-full font-medium text-white transition-colors flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Contactar por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Onda decorativa inferior -->
+        <div class="relative h-16 mt-16 overflow-hidden">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full"
+                xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,140.83,94.17,208.18,80.28,289.4,65.17,283.09,63.45,321.39,56.44Z"
+                    fill="#F8F9FA"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-12 md:place-items-center">
+                <div class="self-start">
+                    <a href="#" class="mb-4 inline-block">
+                        <img src="../img/logo.png" class="w-[100px]" alt="Logo TEX VYE">
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Soluciones creativas para emprendedores e instituciones. Diseños que marcan la diferencia.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="../index.html#inicio"
+                                class="text-gray-400 hover:text-accent transition-colors">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#servicios"
+                                class="text-gray-400 hover:text-accent transition-colors">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#trabajos"
+                                class="text-gray-400 hover:text-accent transition-colors">Trabajos</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#contacto"
+                                class="text-gray-400 hover:text-accent transition-colors">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Redes sociales</h4>
+                    <div class="space-y-3">
+                        <div class="flex gap-x-[6px]">
+                            <a href="#"
+                                class="w-10 h-10 bg-neutral rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <span
+                                class="social-network text-gray-400 hover:text-accent transition-colors leading-[2.6]">Instagram</span>
+                        </div>
+                        <div class="flex gap-x-[6px]">
+                            <a href="#"
+                                class="w-10 h-10 bg-neutral rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <span
+                                class="social-network text-gray-400 hover:text-accent transition-colors leading-[2.6]">Facebook</span>
+                        </div>
+
+                        <div class="flex gap-x-[6px]">
+                            <a href="#"
+                                class="w-10 h-10 bg-neutral rounded-full flex items-center justify-center hover:bg-accent/20 transition-colors">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <span
+                                class="social-network text-gray-400 hover:text-accent transition-colors leading-[2.6]">TikTok</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center">
+            <p class="text-gray-500">
+                © <span class="logo-letra-tex tracking-[2px]">TEX</span> <span
+                    class="logo-letra-iniciales tracking-[2px]">V</span><span
+                    class="logo-letra-y tracking-[2px]">Y</span><span class="logo-letra-iniciales">E</span> Todos los
+                derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <span class="modal-close z-50" onclick="closeVideoModal()">&times;</span>
+
+        <div class="video-container">
+            <div class="video-wrapper min-h-[400px]">
+                <video id="video-player" controls class="w-full h-auto rounded-lg" style="background-color: #00000099;" preload="metadata">
+                    <source id="video-source" src="" type="video/mp4">
+                </video>            
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="../js/videos/main.js"></script>
+</body>
