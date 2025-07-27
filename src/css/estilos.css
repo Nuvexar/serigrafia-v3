@@ -2,11 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
 
 :root {
-  /* TEX - blanco con leve tono grisáceo */
-  --color-tex: #f1f1f1dc;
-
-  /* V - verde brillante */
-  --color-verde-brillante: #00e08c;
+  /* TEX - blanco brillante */
+  --color-tex: #ffffff;
 
   /* E - verde esmeralda */
   --color-verde-apagado: #2da55f;
@@ -29,11 +26,6 @@ nav .logo {
 }
 
 .logo-letra-iniciales {
-  color: var(--color-verde-brillante);
-  font-family: 'Montserrat';
-}
-
-.logo-letra-y {
   color: var(--color-verde-apagado);
   font-family: 'Montserrat';
 }
@@ -97,7 +89,7 @@ body {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background: linear-gradient(90deg, #ff4081, #3d5afe);
+  background: linear-gradient(90deg, #00e08c, #ffffff); 
   transition: width 0.3s ease;
 }
 
