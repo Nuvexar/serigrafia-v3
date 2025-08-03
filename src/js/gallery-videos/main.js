@@ -11,25 +11,25 @@ const videoData = [
     title: "Proceso de Sublimación",
     description:
       "En este video mostramos paso a paso cómo realizamos el proceso de sublimación en nuestras remeras personalizadas, desde la preparación del diseño hasta el producto final.",
-    url: "../videos/1.mp4",
+    url: "../videos/gallery-videos/1.mp4",
   },
   {
     title: "Tutorial de Diseño",
     description:
       "Aprende a crear diseños profesionales para remeras utilizando Adobe Photoshop. Técnicas, consejos y trucos para lograr resultados de calidad.",
-    url: "../videos/2.mp4",
+    url: "../videos/gallery-videos/2.mp4",
   },
   {
     title: "Proyecto Eagles",
     description:
       "Documentación del proceso de creación de uniformes para el equipo de básquet Eagles, desde el diseño inicial hasta la entrega final.",
-    url: "../videos/3.mp4",
+    url: "../videos/gallery-videos/3.mp4",
   },
   {
     title: "Proceso de Tazas",
     description:
       "Cómo sublimamos tazas personalizadas para regalos corporativos y eventos. Técnicas y consejos para lograr resultados duraderos.",
-    url: "../videos/4.mp4",
+    url: "../videos/gallery-videos/4.mp4",
   },
 ];
 

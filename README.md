@@ -1,6 +1,6 @@
-# Print Web - Landing Page
+# TEX VYE - Landing Page
 
-Este proyecto es una landing page para serigrafía creada con HTML, CSS (Tailwind CSS V4.1) y JavaScript.
+Este proyecto es una landing page creada con HTML, CSS (Tailwind CSS V4.1) y JavaScript.
 
 ## Instalación
 
