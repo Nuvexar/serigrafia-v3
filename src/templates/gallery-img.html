@@ -74,20 +74,20 @@
         <section class="py-8">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap justify-center gap-3 mb-8">
-                    <button class="filter-btn active px-6 py-2 rounded-full border cursor-pointer" data-filter="all">
+                    <!-- <button class="filter-btn active px-6 py-2 rounded-full border cursor-pointer" data-filter="all">
                         Todos
-                    </button>
-                    <button class="filter-btn px-6 py-2 rounded-full border cursor-pointer" data-filter="sublimacion">
-                        Sublimación
-                    </button>
-                    <button class="filter-btn px-6 py-2 rounded-full border cursor-pointer" data-filter="serigrafia">
-                        Serigrafía
+                    </button> -->
+                    <button class="filter-btn active px-6 py-2 rounded-full border cursor-pointer" data-filter="all">
+                        Sublimación y DTF
                     </button>
                     <button class="filter-btn px-6 py-2 rounded-full border cursor-pointer" data-filter="remeras">
                         Remeras
                     </button>
                     <button class="filter-btn px-6 py-2 rounded-full border cursor-pointer" data-filter="web">
                         Diseño Web
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-full border cursor-pointer" data-filter="kit">
+                        Kit Completo
                     </button>
                 </div>
             </div>
@@ -99,49 +99,49 @@
                 <div class="masonry-grid" id="gallery-container">
                     <!-- Imagen 1 - Remeras -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                        data-category="remeras sublimacion" data-span="30">
+                        data-category="remeras" data-span="30">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Remera-Tech-Startup.webp" alt="Remera Tech Startup" class="gallery-img">
+                             <img src="../img/Remeras-conjunto-colores.webp" alt="Conjunto de remeras de diferentes colores" class="gallery-img">
                         </div>
                     </div>
 
                     <!-- Imagen 2 - Remeras -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                        data-category="remeras sublimacion" data-span="35">
+                        data-category="remeras" data-span="35">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Remera-Dev-Team.webp" alt="Remera Dev Team">
+                            <img src="../img/Remeras-perchas-2.webp" alt="Conjunto de remeras cologadas en perchas">
                         </div>
                     </div>
 
-                    <!-- Imagen 3 - Serigrafía -->
+                    <!-- Imagen 3 - Sublimación -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                        data-category="serigrafia remeras" data-span="40">
+                        data-category="" data-span="30">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Uniforme-Eagles.webp" alt="Uniforme Eagles">
+                            <img src="../img/Cuadernos-personalizados.webp" alt="Cuaderno color negro personalizado">
                         </div>
                     </div>
 
                     <!-- Imagen 4 - Sublimación -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                        data-category="sublimacion" data-span="25">
+                        data-category="all" data-span="35">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Taza-Corporativa.webp" alt="Taza Corporativa">
+                            <img src="../img/Gorras-personalizadas.webp" alt="Conjunto de gorras personalizadas">
                         </div>
                     </div>
 
-                    <!-- Imagen 5 - Serigrafía -->
+                    <!-- Imagen 5 - Sublimación -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                        data-category="serigrafia remeras" data-span="32">
+                        data-category="remeras" data-span="32">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Remera-Festival.webp" alt="Remera Festival">
+                            <img src="../img/Remera-oversized-negra.webp" alt="Remera oversized negra">
                         </div>
                     </div>
 
-                    <!-- Imagen 15 - Web -->
+                    <!-- Imagen 6 - Web -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer h-full max-w-[500px] redirect" data-category="web" data-span="38">
                         <div class="relative flex items-center justify-center h-full">
                             <div class="overflow-hidden h-full">
-                                <img src="../img/Isalda-Zelaya.png" alt="Imagen de enfermera">
+                                <img src="../img/Isalda-Zelaya.webp" alt="Imagen de enfermera">
                             </div>
                             <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6">
                                 <div>
@@ -151,51 +151,59 @@
                         </div>
                     </div>
 
+                    <!-- Imagen 7 - Remeras -->
+                    <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+                        data-category="remeras sublimacion" data-span="34">
+                        <div class="overflow-hidden h-full">
+                            <img src="../img/Remera-personalizada-versiculo.webp" alt="Remera personaliza con versiculo">
+                        </div>
+                    </div>
+
                     <!-- Imagen 8 - Remeras -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
                         data-category="remeras sublimacion" data-span="34">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Remera-Custom.webp" alt="Remera Custom">
+                            <img src="../img/Estampando-remera.webp" alt="Estampando remera">
                         </div>
                     </div>
 
-                    <!-- Imagen 9 - Sublimación -->
+                    <!-- Imagen 9 - Kit -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                        data-category="sublimacion" data-span="42">
+                        data-category="kit" data-span="34">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Termo-Personalizado.webp" alt="Termo Personalizado">
+                            <img src="../img/Kit-empresarial-personalizado.webp" alt="Remera personaliza con versiculo">
                         </div>
                     </div>
 
-                    <!-- Imagen 10 - Serigrafía -->
+                    <!-- Imagen 10 - Kit -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                        data-category="serigrafia" data-span="26">
+                        data-category="kit" data-span="34">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Gorra-Personalizada.webp" alt="Gorra Personalizada">
+                            <img src="../img/Kit-familiar-personalizado.webp" alt="Kit completo">
+                        </div>
+                    </div>
+
+                    <!-- Imagen 11 - Sublimación -->
+                    <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+                        data-category="sublimacion" data-span="30">
+                        <div class="overflow-hidden h-full">
+                            <img src="../img//Llaveros-personalizados.webp" alt="Llaveros personalizados">
                         </div>
                     </div>
 
                     <!-- Imagen 12 - Sublimación -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                        data-category="sublimacion" data-span="24">
+                        data-category="sublimacion" data-span="32">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Mouse-Pad.webp" alt="Mouse pad">
+                            <img src="../img/Tazas-personalizadas-caras.webp" alt="Tazas personalizadas con rostros">
                         </div>
                     </div>
 
-                    <!-- Imagen 13 - Remeras -->
-                    <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
-                        data-category="remeras serigrafia" data-span="32">
-                        <div class="overflow-hidden h-full">
-                            <img src="../img/Remera-Wave.webp" alt="Remera Wave">
-                        </div>
-                    </div>
-
-                    <!-- Imagen 14 - Sublimación -->
+                    <!-- Imagen 13 - Sublimación -->
                     <div class="masonry-item gallery-item bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
                         data-category="sublimacion" data-span="28">
                         <div class="overflow-hidden h-full">
-                            <img src="../img/Agenda-Personalizada.webp" alt="Agenda personalizada">
+                            <img src="../img//Tazas-personalizadas-marcas.webp" alt="Tazas personalizadas con marcas">
                         </div>
                     </div>
                 </div>
