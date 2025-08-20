@@ -1,0 +1,11 @@
+#accordion-collapse h2 {
+    button {
+        color: var(--color-dark);
+        font-weight: 600;
+        text-align: left;
+    }
+    button:hover {
+        color: var(--color-verde-apagado);
+    }
+}
+
