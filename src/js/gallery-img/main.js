@@ -65,7 +65,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const category = item.getAttribute("data-category");
         const img = item.querySelector("img");
 
-        if (filter === "all" || category.includes(filter)) {
+        // 👇 Nueva lógica
+        if (filter === "all") {
+          // Mostrar todo MENOS los de categoría "web"
+          if (category !== "web") {
+            item.style.display = "block";
+            filteredImages.push(img);
+          } else {
+            item.style.display = "none";
+          }
+        } else if (category.includes(filter)) {
           item.style.display = "block";
           filteredImages.push(img);
         } else {
@@ -73,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Reasignar eventos de click para las nuevas imágenes visibles
+      // Reasignar eventos de click a las imágenes visibles
       filteredImages.forEach((img, index) => {
         img.onclick = () => openLightbox(index);
       });
@@ -87,10 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     items.forEach((item) => {
       const spanValue = item.getAttribute("data-span") || 30;
-      item.style.setProperty("--span", Math.ceil(spanValue / 3)); // podés ajustar el divisor para más/menos altura
+      item.style.setProperty("--span", Math.ceil(spanValue / 3));
     });
   }
 
   window.addEventListener("load", applyMasonry);
   window.addEventListener("resize", applyMasonry);
+  // 🔹 Aplicar filtro inicial para "Sublimación y DTF"
+  document.querySelector('.filter-btn.active').click();
 });
