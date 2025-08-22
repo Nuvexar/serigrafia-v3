@@ -10,7 +10,7 @@
 const FORMSPREE_URL = 'https://formspree.io/f/xeozglpa'; // URL del endpoint de Formspree
 const SIMULAR_ENVIO_CORREO = false; // ← Cambiar a false en producción para enviar correos reales
 // Clave pública (site key) de Google reCAPTCHA v3 para validar solicitudes del formulario y proteger contra bots
-const RECAPTCHA_SITE_KEY = '6LcZL48rAAAAAGO3dejwqJlr_IsiurHaHJHp18sg';
+const RECAPTCHA_SITE_KEY = '6LfPZpArAAAAAOV6eXvXKJqD4O1xlBD3Dz5aBqTt'; 
 
 document.getElementById('contactForm').addEventListener('submit', async (event) => {
     event.preventDefault();
