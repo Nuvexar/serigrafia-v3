@@ -311,141 +311,121 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="py-20 bg-neutral">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 animate-fadeIn">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactanos</h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto">
+                        Estamos listos para hacer realidad tu próximo proyecto. Completa el formulario o contáctanos
+                        directamente por WhatsApp.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Formulario -->
+                    <div class="animate-fadeIn delay-100">
+                        <form id="contactForm" class="bg-dark p-8 rounded-xl">
+                            <div class="mb-6">
+                                <label for="name" class="block text-sm font-medium mb-2">Nombre completo</label>
+                                <input type="text" id="name" name="name" class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent" placeholder="Tu nombre" autocomplete="name" required>
+                            </div>
+                
+                            <div class="mb-6">
+                                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent"
+                                    placeholder="tu@email.com" autocomplete="email" required>
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="service" class="block text-sm font-medium mb-2">Servicio que te interesa</label>
+                                <select id="service" name="service"
+                                    class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent" required>
+                                    <option value="">Selecciona un servicio</option>
+                                    <option value="sublimacion">Sublimación</option>
+                                    <option value="serigrafia">Serigrafía</option>
+                                    <option value="remeras">Remeras personalizadas</option>
+                                    <option value="web">Diseño web</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
+                                <textarea id="message" name="message" rows="4" class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent" placeholder="Cuéntanos sobre tu proyecto..." autocomplete="off" required></textarea>
+                            </div>
+
+                            <!-- Botón de envío con spinner -->
+                            <button id="btn-enviar" type="submit" class="btn-primary w-full py-3 rounded-lg font-medium flex items-center justify-center gap-2">
+                                <svg id="spinner-enviar" class="h-5 w-5 animate-spin text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" >
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+
+                                <span id="texto-boton">Enviar mensaje</span>
+                            </button>
+
+                            <p class="text-center text-sm text-gray-400 mt-4">
+                                Te responderemos a la brevedad
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- WhatsApp y datos de contacto -->
+                    <div class="animate-fadeIn delay-200">
+                        <div class="bg-dark p-8 rounded-xl mb-8">
+                            <h3 class="text-2xl font-semibold mb-6">Contacto directo</h3>
+
+                            <div class="space-y-6">
+                                <a href="https://wa.me/5493513867995" target="_blank"
+                                    class="flex items-center p-4 pl-[0px] pr-[15px] bg-[#25D366]/10 rounded-lg hover:bg-[#25D366]/20 transition-colors">
+                                    <div class="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center mr-4">
+                                        <i class="fab fa-whatsapp text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">WhatsApp</h4>
+                                        <p class="text-gray-400">Respuesta inmediata</p>
+                                    </div>
+                                    <i class="fas fa-arrow-right ml-auto"></i>
+                                </a>
+
+                                <div class="flex items-center p-4 pl-[0px] pr-[0px] bg-neutral/50 rounded-lg">
+                                    <div
+                                        class="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Email</h4>
+                                        <p class="text-gray-400">enzorivero075@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center p-4 pl-[0px] pr-[10px] bg-neutral/50 rounded-lg">
+                                    <div
+                                        class="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Puntos de entrega</h4>
+                                        <p class="text-gray-400">Patio Olmos y Pabellon Argentino</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-dark p-8 rounded-xl">
+                            <h3 class="text-xl font-semibold mb-4">Horario de atención</h3>
+                            <p>Estamos disponibles para responder tus consultas las 24 horas del día, los 7 días de la semana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Contacto -->
-    <section id="contacto" class="py-20 bg-neutral">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 animate-fadeIn">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactanos</h2>
-                <p class="text-gray-300 max-w-2xl mx-auto">
-                    Estamos listos para hacer realidad tu próximo proyecto. Completa el formulario o contáctanos
-                    directamente por WhatsApp.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Formulario -->
-                <div class="animate-fadeIn delay-100">
-                    <form id="contactForm" class="bg-dark p-8 rounded-xl">
-                        <div class="mb-6">
-                            <label for="name" class="block text-sm font-medium mb-2">Nombre completo</label>
-                            <input type="text" id="name" name="name" class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent" placeholder="Tu nombre" autocomplete="name" required>
-                        </div>
-            
-                        <div class="mb-6">
-                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                            <input type="email" id="email" name="email"
-                                class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent"
-                                placeholder="tu@email.com" autocomplete="email" required>
-                        </div>
-
-                        <div class="mb-6">
-                            <label for="service" class="block text-sm font-medium mb-2">Servicio que te interesa</label>
-                            <select id="service" name="service"
-                                class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent" required>
-                                <option value="">Selecciona un servicio</option>
-                                <option value="sublimacion">Sublimación</option>
-                                <option value="serigrafia">Serigrafía</option>
-                                <option value="remeras">Remeras personalizadas</option>
-                                <option value="web">Diseño web</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-6">
-                            <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" class="w-full bg-neutral border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent" placeholder="Cuéntanos sobre tu proyecto..." autocomplete="off" required></textarea>
-                        </div>
-
-                        <!-- Botón de envío con spinner -->
-                        <button
-                            id="btn-enviar"
-                            type="submit"
-                            class="btn-primary w-full py-3 rounded-lg font-medium flex items-center justify-center gap-2"
-                        >
-                            <svg
-                            id="spinner-enviar"
-                            class="h-5 w-5 animate-spin text-white hidden"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            >
-                            <circle
-                                class="opacity-25"
-                                cx="12"
-                                cy="12"
-                                r="10"
-                                stroke="currentColor"
-                                stroke-width="4"
-                            ></circle>
-                            <path
-                                class="opacity-75"
-                                fill="currentColor"
-                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                            ></path>
-                            </svg>
-
-                            <span id="texto-boton">Enviar mensaje</span>
-                        </button>
-
-                        <p class="text-center text-sm text-gray-400 mt-4">
-                            Te responderemos a la brevedad
-                        </p>
-                    </form>
-                </div>
-
-                <!-- WhatsApp y datos de contacto -->
-                <div class="animate-fadeIn delay-200">
-                    <div class="bg-dark p-8 rounded-xl mb-8">
-                        <h3 class="text-2xl font-semibold mb-6">Contacto directo</h3>
-
-                        <div class="space-y-6">
-                            <a href="https://wa.me/5493513867995" target="_blank"
-                                class="flex items-center p-4 pl-[0px] pr-[15px] bg-[#25D366]/10 rounded-lg hover:bg-[#25D366]/20 transition-colors">
-                                <div class="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center mr-4">
-                                    <i class="fab fa-whatsapp text-2xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium">WhatsApp</h4>
-                                    <p class="text-gray-400">Respuesta inmediata</p>
-                                </div>
-                                <i class="fas fa-arrow-right ml-auto"></i>
-                            </a>
-
-                            <div class="flex items-center p-4 pl-[0px] pr-[0px] bg-neutral/50 rounded-lg">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-envelope text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium">Email</h4>
-                                    <p class="text-gray-400">enzorivero075@gmail.com</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center p-4 pl-[0px] pr-[10px] bg-neutral/50 rounded-lg">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-map-marker-alt text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium">Puntos de entrega</h4>
-                                    <p class="text-gray-400">Patio Olmos y Pabellon Argentino</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-dark p-8 rounded-xl">
-                        <h3 class="text-xl font-semibold mb-4">Horario de atención</h3>
-                        <p>Estamos disponibles para responder tus consultas las 24 horas del día, los 7 días de la semana.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Footer -->
     <footer class="bg-dark py-12 border-t border-gray-800">
         <div class="container mx-auto px-4">
